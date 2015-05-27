@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: pacman
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -71,3 +71,5 @@ deploy:
   type: git
   repo : https://github.com/longweiquan/longweiquan.github.io.git
   branch : master
+
+
