@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Dragon Egg
+subtitle: Break & Fly
 description:
-author: John Doe
-language:
+author: Weiquan LONG
+language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://longweiquan.github.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -64,6 +64,11 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: pacman
+
+# Extensions
+## Plugins: https://github.com/hexojs/hexo-generator-sitemap
+sitemap:
+    path: sitemap.xml
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
