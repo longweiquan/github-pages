@@ -32,7 +32,7 @@ icon_font: default
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # MathJax Support
@@ -41,6 +41,10 @@ mathjax:
 
 # Schemes
 scheme: Mist
+
+# Created time
+since: 2015
+
 
 
 # Sidebar, available value:
@@ -90,6 +94,12 @@ social:
 # See: https://www.google.com/webmasters/
 google_site_verification: WO97Kb59eIHQ0HVBPqjHep4lAv4ksgzoc3sYJPRZQ8E
 
+# Google Analytics
+# Google分析ID
+google_analytics: UA-63462717-1
+
+
+
 
 ## DO NOT EDIT THE FOLLOWING SETTINGS
 ## UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -108,3 +118,4 @@ images: images
 
 # Theme version
 version: 0.4.5.1
+
