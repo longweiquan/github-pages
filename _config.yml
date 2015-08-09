@@ -82,3 +82,13 @@ feed:
     type: atom
     path: atom.xml
     limit: 20
+
+# markdown render options
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: false       # not to transform line break to <br>
+  smartLists: true
+  smartypants: true
