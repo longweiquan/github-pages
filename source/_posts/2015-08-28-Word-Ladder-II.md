@@ -21,72 +21,75 @@ Given two words (start and end), and a dictionary, find all shortest transformat
 Solution in Java
 ----------------
 
-{% codeblock %}
-class Node{
-    String word;
-    int distance;
-    Node prev;
-    Node(String word, int distance, Node prev){
-        this.word = word;
-        this.distance = distance;
-        this.prev = prev;
+{% codeblock lang:java %}
+public class WordLadderII {
+
+    class Node{
+        String word;
+        int distance;
+        Node prev;
+        Node(String word, int distance, Node prev){
+            this.word = word;
+            this.distance = distance;
+            this.prev = prev;
+        }
     }
-}
 
-public List<List<String>> findLadders(String start, String end, Set<String> dict) {
+    public List<List<String>> findLadders(String start, String end, Set<String> dict) {
 
-    LinkedList<Node> nodes = new LinkedList<>();
-    nodes.add(new Node(start, 1, null));
-    dict.add(end);
+        LinkedList<Node> nodes = new LinkedList<>();
+        nodes.add(new Node(start, 1, null));
+        dict.add(end);
 
-    Set<String> visited = new HashSet<>();
-    List<List<String>> results = new ArrayList<>();
-    int currentDistance = 1;
-    int endDistance = Integer.MAX_VALUE;
+        Set<String> visited = new HashSet<>();
+        List<List<String>> results = new ArrayList<>();
+        int currentDistance = 1;
+        int endDistance = Integer.MAX_VALUE;
 
-    while (!nodes.isEmpty()){
+        while (!nodes.isEmpty()){
 
-        Node node = nodes.removeFirst();
-        if(node.word.equals(end)){
-            List<String> result = new LinkedList<>();
-            Node current = node;
-            while (current != null){
-                result.add(0, current.word);
-                current = current.prev;
+            Node node = nodes.removeFirst();
+            if(node.word.equals(end)){
+                List<String> result = new LinkedList<>();
+                Node current = node;
+                while (current != null){
+                    result.add(0, current.word);
+                    current = current.prev;
+                }
+                results.add(result);
+                endDistance = node.distance;
+                continue;
             }
-            results.add(result);
-            endDistance = node.distance;
-            continue;
-        }
 
-        if(node.distance > endDistance){
-            break;
-        }
+            if(node.distance > endDistance){
+                break;
+            }
 
-        if(node.distance > currentDistance){
-            currentDistance = node.distance;
-            dict.removeAll(visited);
-            visited.clear();
-        }
+            if(node.distance > currentDistance){
+                currentDistance = node.distance;
+                dict.removeAll(visited);
+                visited.clear();
+            }
 
-        char[] chars = node.word.toCharArray();
-        for(int i=0; i<chars.length; i++){
-            char temp = chars[i];
-            for(char c='a'; c<='z'; c++){
-                if(temp != c){
-                    chars[i] = c;
+            char[] chars = node.word.toCharArray();
+            for(int i=0; i<chars.length; i++){
+                char temp = chars[i];
+                for(char c='a'; c<='z'; c++){
+                    if(temp != c){
+                        chars[i] = c;
 
-                    String word = String.valueOf(chars);
-                    if(dict.contains(word)){
-                        visited.add(word);
-                        nodes.add(new Node(word, node.distance+1, node));
+                        String word = String.valueOf(chars);
+                        if(dict.contains(word)){
+                            visited.add(word);
+                            nodes.add(new Node(word, node.distance+1, node));
+                        }
                     }
                 }
+                chars[i] = temp;
             }
-            chars[i] = temp;
         }
-    }
 
-    return results;
+        return results;
+    }
 }
 {% endcodeblock %}
