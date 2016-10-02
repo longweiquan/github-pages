@@ -4,7 +4,7 @@
 
 # Site
 title: Dragon Egg
-subtitle: Breakthrough & Soar
+subtitle: Tech blog
 description:
 author: Weiquan LONG
 language: en
@@ -63,7 +63,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: next
+# theme: next
+theme: spfk
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo-generator-sitemap
