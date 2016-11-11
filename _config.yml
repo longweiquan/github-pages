@@ -64,7 +64,7 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 # theme: next
-theme: spfk
+theme: apollo
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo-generator-sitemap
@@ -93,3 +93,10 @@ marked:
   breaks: false       # not to transform line break to <br>
   smartLists: true
   smartypants: true
+
+# archive
+archive_generator:
+    per_page: 0
+    yearly: false
+    monthly: false
+    daily: false

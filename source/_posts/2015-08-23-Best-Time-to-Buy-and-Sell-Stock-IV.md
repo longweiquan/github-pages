@@ -7,10 +7,12 @@ tags:
 
 ---
 
+Leetcode - Best Time to Buy and Sell Stock IV Solution
+
+<!-- more -->
 
 Problem
--------
-
+---
 {% blockquote @LeetCode https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ %}
 
 Say you have an array for which the ith element is the price of a given stock on day i.
@@ -19,7 +21,8 @@ Design an algorithm to find the maximum profit. You may complete at most k trans
 {% endblockquote %}
 
 Analyse
--------
+---
+
 
 This problem can be solved by Dynamic Programming. Note, DP is good at solving best solution problems. We will use two
 dimensional DP solution because the prices length and the transaction times will impact the results.
