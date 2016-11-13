@@ -1,9 +1,9 @@
-title: <Getting Things Done> 听书笔记
+title: <Getting Things Done> "Getting Things Done" 听书笔记
 date: 2016-11-12 21:44:09
 tags: Reading, Effectiveness
 ---
 
-这是听樊登读 "Getting Things Done" 的听书笔记. 这是一本关于时间管理的书，又是一本超出时间管理的书，让我们看看作者的具体观点。
+这是樊登读 "Getting Things Done" 的听书笔记. 这是一本关于时间管理的书，又是一本超出时间管理的书，让我们看看作者的具体观点。
 
 <!-- more -->
 
